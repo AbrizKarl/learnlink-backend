@@ -1,0 +1,20 @@
+### 1. Print author
+GET http://localhost:8080/topic/api/printAuthor
+
+### 2. Insert a record
+POST http://localhost:8080/topic/api/postNewTopic
+Content-Type: application/json
+
+{ "subjectId": 1, "title": "Cause and Effect", "lessonContent": "A cause is why something happens. An effect is what happens as a result." }
+
+### 3. Search all records
+GET http://localhost:8080/topic/api/getAllTopics
+
+### 4. Update a record
+PUT http://localhost:8080/topic/api/putTopic?id=1
+Content-Type: application/json
+
+{ "subjectId": 1, "title": "Signal Words", "lessonContent": "Words like because, so, and as a result connect a cause to its effect." }
+
+### 5. Delete a record
+DELETE http://localhost:8080/topic/api/deleteTopic/1
